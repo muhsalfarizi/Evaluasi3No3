@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Percabangan switch</title>
+</head>
+<body>
+    <script>
+        var manggil = prompt('KKM 70,80,90?');
+        var nilai = "";
+
+        switch(manggil){
+            case "90":
+                nilai = "A";
+                break;
+            case "80":
+                nilai = "B+";
+                break;
+            case "70":
+                nilai = "B";
+                break;
+                default:
+                    document.write("<p>Ya ampun</p>");
+            }
+            if(manggil == nilai - ""){
+                document.write("<br>Belajar lagi yah!</br>");
+            } else {
+                document.write('<h2>' + nilai + '</h2>');
+            }
+
+    </script>
+</body>
+</html>
